@@ -9,10 +9,10 @@ iGEM Wiki Repository
 - This repository will primarily be used for code dumps for the ENTIRE wiki
 
 **BEFORE YOU START CODING**
-- Make sure you’re on Manchester’s teamspace (insert link here)
+- Make sure you’re on Manchester’s teamspace (2021.igem.org/Team:Manchester)
 - We are not allowed to edit a space that is not officially allocated to us
 - ALWAYS use a webdev environment; VS Code, Atom, Brackets are excellent software options
-- Do NOT use Word or Notepad; it will make you go crazy in less than 5 minutes
+- Do NOT use Word or Notepad; you will go crazy in less than 5 minutes
 
 **iGEM LOGIN BAR**
 - Full-width
