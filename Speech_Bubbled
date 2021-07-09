@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    <style>
+        .circularsb{
+            width: 250px;
+            border: 5px;
+            padding: 80px 0px;
+            margin: 30px auto;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 15px;
+            font-weight: 900;
+            font-family: arial;
+            position: relative;
+            color: #090C9B;
+        }
+        .circle1 {
+            border: 5px solid #00bfb6;
+            position: absolute;
+            width: 25px;
+            padding: 20px;
+            border-radius: 50%;
+            right: -15px;
+            bottom: 23px;
+        }
+        .circle2 {
+            border: 5px solid #00bfb6;
+            position: absolute;
+            width: 5px;
+            padding: 10px 15px;
+            border-radius: 50%;
+            right: -60px;
+            bottom: 5px;
+        }
+        .circle3 {
+            border: 5px solid #00bfb6;
+            position: absolute;
+            width: 5px;
+            padding: 10px 15px;
+            border-radius: 50%;
+            right: -60px;
+            bottom: 5px;
+        }
+        .circle4 {
+            border: 5px solid #00bfb6;
+            position: absolute;
+            width: 5px;
+            padding: 10px 15px;
+            border-radius: 50%;
+            right: -60px;
+            bottom: 5px;
+        }
+    </style>
+    </head>
+    <body>
+    <div class = "circularsb">
+        Click here for a Stakeholder opinion!
+        <div class = "circle1"></div>
+        <div class = "circle2"></div>
+    </div>
+    <div class = "circularsb">
+        Click here for a Stakeholder opinion!
+        <div class = "circle3"></div>
+        <div class = "circle4"></div>
+    </div>
+    </body>
+    </html>
