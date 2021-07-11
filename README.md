@@ -3,6 +3,9 @@ iGEM Wiki Repository
 
 **Wiki Rules - iGEM 2021**
 
+**CLASS NAMING**
+For Homepage: USE "_LANDING-[ELEMENT]_****" for classes or div IDs.
+
 **NOTES**
 - This README has been adopted from the 2020 iGEM deliverables.
 - This README will be continuously updated as we get information for 2021
