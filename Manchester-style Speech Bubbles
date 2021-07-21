@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stakeholder Bubbles</title>
+</head>
+<style>
+      h1{
+        position: relative;
+        right: -450px;
+        top: 250px;
+    }
+    .speech-bubble1 {
+	position: relative;
+    left: 100px;
+    top: 20px;
+	border-radius: .4em;
+    box-shadow: 4px 4px black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.1em;
+    color: whitesmoke;
+    background-color:#660099;
+    text-align: center;
+    padding: 20px 10px;
+    border: 2px solid transparent;
+    max-width: 300px;
+}
+
+.speech-bubble1:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 28px solid transparent;
+	border-top-color: #660099;
+	border-bottom: 0;
+    border-left: 0;
+	margin-left: -14px;
+	margin-bottom: -28px;
+}
+
+.speech-bubble2{
+    position: relative;
+    left: 1000px;
+    top: 20px;
+	border-radius: .4em;
+    box-shadow: 4px 4px black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.1em;
+    color: whitesmoke;
+    background-color: #660099; 
+    text-align: center;
+    padding: 20px 10px;
+    border: 2px solid transparent;
+    max-width: 300px;
+}
+.speech-bubble2:after {
+    content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 28px solid transparent;
+	border-top-color: #660099;
+	border-bottom: 0;
+	border-left: 0;
+	margin-left: -14px;
+	margin-bottom: -28px;
+}
+.speech-bubble3{
+    position: relative;
+    left: 100px;
+    top: 20px;
+	border-radius: .4em;
+    box-shadow: 4px 4px black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.1em;
+    color: whitesmoke;
+    background-color: #660099;
+    text-align: center;
+    padding: 20px 10px;
+    border: 2px solid transparent;
+    max-width: 300px;
+}
+.speech-bubble3:after{
+    content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 28px solid transparent;
+	border-top-color: #660099;
+	border-bottom: 0;
+	border-right: 0;
+	margin-left: -14px;
+	margin-bottom: -28px;
+}
+.speech-bubble4{
+    position: relative;
+    left: 1000px;
+    top: 20px;
+	border-radius: .4em;
+    box-shadow: 4px 4px black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.1em;
+    color: whitesmoke;
+    background-color: #660099;
+    text-align: center;
+    padding: 20px 10px;
+    border: 2px solid transparent;
+    max-width: 300px;
+}
+.speech-bubble4:after{
+    content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 28px solid transparent;
+	border-top-color: #660099;
+	border-bottom: 0;
+	border-right: 0;
+	margin-left: -14px;
+	margin-bottom: -28px;
+}
+.speech-bubble5{
+    position: relative;
+    left: 100px;
+    top: 20px;
+	border-radius: .4em;
+    box-shadow: 4px 4px black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.1em;
+    color: whitesmoke;
+    background-color: #660099;
+    text-align: center;
+    padding: 20px 10px;
+    border: 2px solid transparent;
+    max-width: 300px;
+}
+.speech-bubble5:after{
+    content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 28px solid transparent;
+	border-top-color: #660099;
+	border-bottom: 0;
+	border-left: 0;
+	margin-left: -14px;
+	margin-bottom: -28px;
+}
+.speech-bubble6{
+    position: relative;
+    left: 1000px;
+    top: 20px;
+	border-radius: .4em;
+    box-shadow: 4px 4px black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.1em;
+    color: whitesmoke;
+    background-color: #660099;
+    text-align: center;
+    padding: 20px 10px;
+    border: 2px solid transparent;
+    max-width: 300px;
+}
+.speech-bubble6:after{
+    content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 28px solid transparent;
+	border-top-color: #660099;
+	border-bottom: 0;
+	border-left: 0;
+	margin-left: -14px;
+	margin-bottom: -28px;
+}
+.speech-bubble7{
+    position: relative;
+    left: 100px;
+    top: 20px;
+	border-radius: .4em;
+    box-shadow: 4px 4px black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.1em;
+    color: whitesmoke;
+    background-color: #660099;
+    text-align: center;
+    padding: 20px 10px;
+    border: 2px solid transparent;
+    max-width: 300px;
+}
+.speech-bubble7:after{
+    content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 28px solid transparent;
+	border-top-color: #660099;
+	border-bottom: 0;
+    border-right: 0;
+	margin-left: -14px;
+	margin-bottom: -28px;
+}
+.speech-bubble8{
+    position: relative;
+    left: 1000px;
+    top: 20px;
+	border-radius: .4em;
+    box-shadow: 4px 4px black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.1em;
+    color: whitesmoke;
+    background-color: #660099;
+    text-align: center;
+    padding: 20px 10px;
+    border: 2px solid transparent;
+    max-width: 300px;
+}
+.speech-bubble8:after{
+    content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 28px solid transparent;
+	border-top-color: #660099;
+	border-bottom: 0;
+	border-right: 0;
+	margin-left: -14px;
+	margin-bottom: -28px;
+}
+</style>
+<body>
+    <body>
+        <h1>
+            Tap a speech bubble to learn more 
+        </h1>
+        <h1>
+            about what our stakeholders have to say :)
+        </h1>
+        <div class = "speech">
+        <div class = "speech-bubble1">
+            Click here for stakeholder feedback!
+        </div>
+        <div class = "speech-bubble2">
+            Click here for stakeholder feedback!    
+        </div>
+        <div class = "speech-bubble3">
+            Click here for stakeholder feedback!
+        </div>
+        <div class = "speech-bubble4">
+            Click here for stakeholder feedback!
+        </div>
+        <div class = "speech-bubble5">
+            Click here for stakeholder feedback!
+        </div>
+        <div class = "speech-bubble6">
+            Click here for stakeholder feedback!
+        </div>
+        <div class = "speech-bubble7">
+            Click here for stakeholder feedback!
+        </div>
+        <div class = "speech-bubble8">
+            Click here for stakeholder feedback!
+        </div>
+        </div>
+</body>
+</html>
