@@ -2,6 +2,10 @@ h1{
     color:rgb(68, 17, 116); /* This will change with customization*/
     text-align: center;
 }
+h3{
+    color:rgb(3, 3, 3); /* This will change with customization*/
+    text-align: 50%;
+}
     p{
     color:rgb(2, 2, 2); /* This will change with customization*/
     text-align: center;
