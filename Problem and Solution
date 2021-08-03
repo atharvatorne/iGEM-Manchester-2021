@@ -1,1 +1,33 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Problem and solution UriGel</title>
+</head>
+<style>
+    .utiexplanation{
+        max-width: 99%;
+    }
+    .symptomsofutis{
+        max-width:99%;
+    }
+    .statisticsutis{
+        max-width:99%;
+    }
+    .catheterutis{
+        max-width:99%;
+    }
+    .oursolution{
+        max-width:99%;
+    }
+</style>
+<body>
+    <img src = "file:///C:/Users/sarak/Documents/iGEM/Wiki/Mainpage%20graphics/Problem%20and%20solution%20pics/1%20UTI%20explanation.png" class = "utiexplanation"/>
+    <img src = "file:///C:/Users/sarak/Documents/iGEM/Wiki/Mainpage%20graphics/Problem%20and%20solution%20pics/2%20symptoms%20of%20utis.png" class = "symptomsofutis"/>
+    <img src= "file:///C:/Users/sarak/Documents/iGEM/Wiki/Mainpage%20graphics/Problem%20and%20solution%20pics/4%20Stats%20UTIs.png" class = "statisticsutis"/>
+    <img src = "file:///C:/Users/sarak/Documents/iGEM/Wiki/Mainpage%20graphics/Problem%20and%20solution%20pics/3%20Catheter%20associated%20UTIs.png" class = "catheterutis"/>
+    <img src = "file:///C:/Users/sarak/Documents/iGEM/Wiki/Mainpage%20graphics/Problem%20and%20solution%20pics/5%20our%20solution.png" class = "oursolution"/>
+</body>
+</html>
