@@ -1,0 +1,39 @@
+h1{
+    color:rgb(68, 17, 116); /* This will change with customization*/
+    text-align: center;
+}
+    p{
+    color:rgb(2, 2, 2); /* This will change with customization*/
+    text-align: center;
+    
+    }
+    .UrinaryT {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+    .healthy_UrinaryT .fixed {
+        position: fixed;
+        bottom: 0px;
+        right: 30px;
+        width: 205px;
+        height: 78px;
+    }
+    .healthy_UrinaryT-title{
+        text-align: left;
+        color: maroon;
+    }
+    .Infected_UrinaryT .fixed {
+        position: fixed;
+        bottom: 0px;
+        right: 30px;
+        width: 205px;
+        height: 78px;
+        color: goldenrod;
+    }
+    .Infected_UrinaryT-title{
+        text-align: right;
+        color: goldenrod;
+    }
