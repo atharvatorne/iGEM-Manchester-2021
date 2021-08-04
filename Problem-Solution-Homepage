@@ -50,7 +50,23 @@
         <li>Urinary stones</li>
         </ul> 
     </div>
-        
+        <div>
+         <h1>Catheters are Important!</h1>
+        <img src="file:///Users/sandralizethmartinezdiaz/Desktop/catheter.jpg" alt="Foley Urinary Catheter inserted into a penis" class="catheter_homepage"/>
+        <div class="container_catheter"> 
+            <p>Urinary Catheters are flexible tubes designed to empty the bladder during urinary incontinence or urinary retention by collecting the urine in a drainage bag (NHS)</p>
+            <p><b>Allow urine drainage during:</b></p>
+            <div class="catheterbox">Prostate enlargement or scarring</div>
+            <div class="catheterbox">Weakness or nerve damage</div>
+            <div class="catheterbox">Post-childbirth incontinence</div>
+            <div class="catheterbox">Bladder cancer or chemotherapy</div>
+        </div>
+        <div class="hexagoncatheter" alt="yellow hexagon with text"> <b>BUT</b> Catheters are the <b>main</b> cause of Catheter- Associated Urinary Tract Infections <b>(CAUTIs)</b></div>
+        <div class="hex">
+            <div class="hex:before"></div>
+            <div class="hex:after"></div>
+        </div>
+  </div>
 </body>
 
 </html>
