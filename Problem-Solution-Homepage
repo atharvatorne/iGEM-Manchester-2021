@@ -4,16 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="Homepage_manchester.css"/>
+    <link rel="stylesheet" type="text/css" href="file:///C:/Users/Selin%20Ibrahimov/Desktop/Uni/iGEM/html/problem%20solution.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
-        <h1>What are Urinary Tract Infections? (UTIs) </h1>
-        <h3>Inflammation in the urinary tract  (kidneys, bladder, urethra) are caused by the colonisation of pathogenic bacteria.</h3>
-        <img src="file:///Users/sandralizethmartinezdiaz/Pictures/urinaryt.png" class="UrinaryT"/>
-       <div class="healthy">
-           <h3 class="healthy-title"> Healthy </h3>
-           
-       </div>
+    <div>
+         <h1>What are Urinary Tract Infections? (UTIs) </h1>
+    </div>
+    
+    <div>
+        <h3>Inflammation in the urinary tract  (kidneys, bladder, urethra) are caused by the colonisation of pathogenic bacteria.</h3> 
+    </div>
+
+    <div class="Kidneys">
+        <img src="file:///C:/Users/Selin%20Ibrahimov/Desktop/Uni/iGEM/html/Kidneys.jpeg"/>
+    </div>    
+    
+    <div class="Healthy">
+        HEALTHY
+    </div>    
+
+    <div class="Infected">
+        INFECTED   
+    </div>
+
+    <div class="BoxHealthy">
+        <ul class="BoxHealthy"> 
+        <li>Majority is Lactobacillus commensal bacteria</li> 
+        <br>
+        <li>Slightly acidic pH</li>
+        </ul>
+
+    </div>
+
+    <div class="BoxInfected">
+        <ul class="BoxInfected"> 
+        <li>Dysbiosis - change in types of bacterial colonies</li> 
+        <br>
+        <li>Very acidic or very alkaline pH</li>
+        <br>
+        <li>Blood in urine</li>
+        <br>
+        <li>Urinary stones</li>
+        </ul> 
+    </div>
         
 </body>
 
