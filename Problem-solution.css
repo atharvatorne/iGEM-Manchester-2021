@@ -72,3 +72,71 @@ h3{
        color:rgb(3, 3, 3);
        position: absolute;
     }
+.container_catheter{
+        position: relative;
+        text-align: centre;
+        color: black;
+        top: 8px;
+        left: 16px;
+        width: 700px;
+        height: 30px;
+        font-size: 25px;
+        padding: 10px;
+      }
+
+      .catheterbox {
+        width: 80%;
+        border: 8px solid rgb(68, 17, 116);
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+        font-size: 20px;
+      }
+    .catheter_homepage{
+        position: absolute;
+        right: -5px;
+       }
+    .hexagoncatheter{
+        position: absolute;
+        width: 250px;
+        float: right bottom;
+        border: 8px solid rgb(255, 238, 0);
+        padding: 10px;
+        height: 115px;
+        margin: 10px;
+        text-align: center;
+        font-size: 20px;
+        bottom: 110px;
+        right: 120px;
+    }
+    .hex {
+        position: absolute;
+        bottom: 120px;
+        right: 215px;
+        margin-top: 10px;
+        width: 200px;
+        height: 150px;
+        border-color: rgb(255, 238, 0);
+        
+        display: inline-block;
+    }
+    .hex:before {
+        content: " ";
+        width: 0; height: 0;
+        border-bottom: 30px solid;
+        border-color: inherit;
+        border-left: 140px solid transparent;
+        border-right: 140px solid transparent;
+        position: absolute;
+        top: -30px;
+    }
+    .hex:after {
+        content: "";
+        width: 0;
+        position: absolute;
+        bottom: -30px;
+        border-top: 30px solid;
+        border-color: inherit;
+        border-left: 140px solid transparent;
+        border-right: 140px solid transparent;
+    }
