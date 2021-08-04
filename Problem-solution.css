@@ -1,43 +1,74 @@
 h1{
     color:rgb(68, 17, 116); /* This will change with customization*/
     text-align: center;
+    font-size: 45px; 
+    font-family: Open Sans;
+    font-weight: 400;
 }
 h3{
     color:rgb(3, 3, 3); /* This will change with customization*/
-    text-align: 50%;
-}
-    p{
-    color:rgb(2, 2, 2); /* This will change with customization*/
+    font-family: Open Sans;
+    font-weight: 300;
+    top: 65px;
+    position: absolute;
+    font-size: 25px;
+    margin-left: 200px;
+    margin-right: 200px;
     text-align: center;
-    
-    }
-    .UrinaryT {
+}
+   
+    .Kidneys {
         position: absolute;
-        top: 50%;
+        top: 55%;
         left: 50%;
         transform: translate(-50%, -50%);
+    }
+    .Kidneys .fixed {
+        width: 205px;
+        height: 78px;
+    }
+    .Healthy {
+        color: maroon;
+        font-family: Open Sans; 
+        top: 200px;  
+        font-size: 30px; 
+        position: absolute;
+        left: 300px
 
     }
-    .healthy_UrinaryT .fixed {
-        position: fixed;
-        bottom: 0px;
-        right: 30px;
-        width: 205px;
-        height: 78px;
-    }
-    .healthy_UrinaryT-title{
-        text-align: left;
-        color: maroon;
-    }
-    .Infected_UrinaryT .fixed {
-        position: fixed;
-        bottom: 0px;
-        right: 30px;
-        width: 205px;
-        height: 78px;
+    .Infected {
+        position: absolute;
+        top: 200px;
+        right: 300px;
         color: goldenrod;
+        font-family: Open Sans;
+        font-size: 30px;
     }
-    .Infected_UrinaryT-title{
-        text-align: right;
-        color: goldenrod;
+    
+    .BoxHealthy {
+       height: 200px;
+       font-size: 20px;
+       font-family: Open Sans;
+       font-weight: 300; 
+       margin-top: 75px;
+       width: 200px;
+       margin-left: 110px;
+       text-align: center;
+       list-style-type: circle;
+       color:rgb(3, 3, 3);
+       position: absolute;
+    }
+
+    .BoxInfected {
+       height: 200px;
+       font-size: 20px;
+       font-family: Open Sans;
+       font-weight: 300; 
+       margin-top: 75px;
+       width: 200px;
+       margin-left: 515px;
+       text-align: center;
+       list-style-type: circle;
+       color:rgb(3, 3, 3);
+       position: absolute;
     }
