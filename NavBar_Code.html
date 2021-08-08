@@ -1,0 +1,195 @@
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draft Homepage</title>
+
+    <style>
+    
+.topnav {
+  top:0px;
+  width: 100%;
+  background-color: #660099;
+  overflow: fixed;
+  position: absolute;
+  z-index:500;
+  float: left;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: #fff8bb;
+  text-align: center;
+  padding: 8px 8px;
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 5.3em;
+}
+
+.active {
+  background-color: #222730;
+  color: black;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 15px;
+  border: none;
+  outline: none;
+  color: #fff8bb;
+  padding: 8px 8px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  line-height: 5.3em;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #222730;
+  min-width: 180px;
+  box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  line-height: 2em;
+}
+
+.dropdown-content a {
+  float: none;
+  color: #fff8bb;
+  padding: 2px 2px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  line-height: 2em;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn { 
+  background-color: #fff8bb;
+  transition:0.5s;
+  color:#edb611;
+}
+
+.dropdown-content a:hover {
+  background-color: white;
+  color:#edb611;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 900px) { 
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 900px) { 
+  .topnav.responsive {position: relative; top:0px;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}      
+
+</style>
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <div class="navbar-header">
+        <!--    <a class="navbar-brand" href="https://2020.igem.org/Team:Manchester"><img src="https://2020.igem.org/wiki/images/archive/1/1b/20201021180227%21T--Manchester--NavBarLogo.png" style="float: left;" alt="NavBarLogo"/></a> -->
+        </div>
+        <a href="https://2020.igem.org/Team:Manchester" class="active">OVERVIEW</a>
+        <div class="dropdown">
+          <button class="dropbtn">PROJECT
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="https://2020.igem.org/Team:Manchester/Description">Description</a>
+            <a href="https://2020.igem.org/Team:Manchester/Medals">Design</a>
+            <a href="https://2020.igem.org/Team:Manchester/Project_Values">Engineering</a>
+            <a href="https://2020.igem.org/Team:Manchester/Safety">Safety</a>
+            <a href="https://2020.igem.org/Team:Manchester/Engineering">Entrepreneurship</a>
+            <a href="https://2020.igem.org/Team:Manchester/Proof_Of_Concept">Poster</a>
+            <a href="https://2020.igem.org/Team:Manchester/Wiki_Study">Future Improvements</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">DRY LAB 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="https://2020.igem.org/Team:Manchester/Human_Practices">Modelling</a>
+            <a href="https://2020.igem.org/Team:Manchester/Surveys">DRYLAB_2</a>
+            <a href="https://2020.igem.org/Team:Manchester/Interviews">DRYLAB_3</a>
+            <a href="https://2020.igem.org/Team:Manchester/Media_Analysis">DRYLAB_4</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">IMPLEMENTATION
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="https://2020.igem.org/Team:Manchester/Model">Results</a>
+            <a href="https://2020.igem.org/Team:Manchester/Pathway_Design">Pathway Design</a>
+            <a href="https://2020.igem.org/Team:Manchester/Modelling">Flux Balance Analysis</a>
+            <a href="https://2020.igem.org/Team:Manchester/Chemical_Analysis">Chemical Analysis</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">HUMAN PRACTICES 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="https://2020.igem.org/Team:Manchester/Entrepreneurship">Integrated Human Practises</a>
+            <a href="https://2020.igem.org/Team:Manchester/Business_Report">HP_2</a>
+            <a href="https://2020.igem.org/Team:Manchester/Business_Plan">HP_3</a>
+            <a href="https://2020.igem.org/Team:Manchester/Contribution">HP_4</a> 
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">TEAM 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="https://2020.igem.org/Team:Manchester/Team">Team</a>
+            <a href="https://2020.igem.org/Team:Manchester/Attributions">Attributions</a>
+            <a href="https://2020.igem.org/Team:Manchester/Collaborations">Collaborations</a>
+            <a href="https://2020.igem.org/Team:Manchester/Partnership">Partnerships</a>
+            <a href="https://2020.igem.org/Team:Manchester/Journal">Project Timeline</a>
+          </div>
+        </div>
+        <a href="https://igem.org/2020_Judging_Form?id=3340">Judging Form</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+ </body>
+ </html>
