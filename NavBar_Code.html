@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Draft Homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
 
     <style>
     
@@ -16,6 +19,7 @@
   position: absolute;
   z-index:500;
   float: left;
+  height: 60px;
 }
 
 .topnav a {
@@ -23,15 +27,18 @@
   display: block;
   color: #fff8bb;
   text-align: center;
-  padding: 8px 8px;
+  padding: 5px 60px;
   text-decoration: none;
   font-size: 15px;
-  line-height: 5.3em;
+  line-height: 3.4em;
+  font-weight: 600;
 }
 
 .active {
   background-color: #222730;
   color: black;
+  top: 0px;
+  Height: 50px;
 }
 
 .topnav .icon {
@@ -45,24 +52,26 @@
 
 .dropdown .dropbtn {
   font-size: 15px;
+  font-weight: 600;
   border: none;
   outline: none;
   color: #fff8bb;
-  padding: 8px 8px;
+  padding: 5px 60px;
   background-color: inherit;
   font-family: inherit;
   margin: 0;
-  line-height: 5.3em;
+  line-height: 3.3em;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
   background-color: #222730;
-  min-width: 180px;
+  min-width: 160px;
   box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.2);
   z-index: 1;
   line-height: 2em;
+  font-weight: 400;
 }
 
 .dropdown-content a {
@@ -73,6 +82,7 @@
   display: block;
   text-align: center;
   line-height: 2em;
+  font-weight: 400;
 }
 
 .topnav a:hover, .dropdown:hover .dropbtn { 
@@ -124,11 +134,11 @@
 </style>
 </head>
 <body>
+    <span style="font-family: Open Sans">
     <div class="topnav" id="myTopnav">
         <div class="navbar-header">
         <!--    <a class="navbar-brand" href="https://2020.igem.org/Team:Manchester"><img src="https://2020.igem.org/wiki/images/archive/1/1b/20201021180227%21T--Manchester--NavBarLogo.png" style="float: left;" alt="NavBarLogo"/></a> -->
         </div>
-        <a href="https://2020.igem.org/Team:Manchester" class="active">OVERVIEW</a>
         <div class="dropdown">
           <button class="dropbtn">PROJECT
             <i class="fa fa-caret-down"></i>
@@ -188,8 +198,11 @@
             <a href="https://2020.igem.org/Team:Manchester/Journal">Project Timeline</a>
           </div>
         </div>
-        <a href="https://igem.org/2020_Judging_Form?id=3340">Judging Form</a>
+        <a href="https://igem.org/2020_Judging_Form?id=3340">JUDGING FORM</a>
         <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-      </div>
+     <a href="https://2020.igem.org/Team:Manchester" class="active">OVERVIEW</a>
+    </div>
+      
+      </span>
  </body>
  </html>
