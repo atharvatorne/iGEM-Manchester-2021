@@ -1,1 +1,518 @@
-
+div[bg=dark] {
+    background-color: rgba(0, 0, 0, 0.85);
+  }
+  
+  div[bg=none] {
+    background-color: none;
+  }
+  
+  #fixedOverlay {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 12;
+    top: 18px;
+    transition: 1s;
+    font-family: "montserrat-light" !important;
+  }
+  #fixedOverlay[bg=none], #fixedOverlay[bg=dark] {
+    pointer-events: none;
+  }
+  #fixedOverlay[bg=none] #bubbles, #fixedOverlay[bg=dark] #bubbles {
+    pointer-events: none;
+  }
+  #fixedOverlay .scroll-wrapper {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    justify-content: space-between;
+    opacity: 1;
+    transition: 0.5s;
+  }
+  #fixedOverlay .scroll-wrapper .scroll-area {
+    height: 100%;
+    width: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  @media screen and (max-width: 767px) {
+    #fixedOverlay .scroll-wrapper .scroll-area {
+      width: 10vw;
+    }
+  }
+  #fixedOverlay .scroll-wrapper .scroll-area#sidebar-wrapper #scrollbar-container {
+    width: 30%;
+    height: 30%;
+    background: rgba(98, 129, 239, 0.3);
+    border-radius: 10px;
+    max-width: 7px;
+  }
+  #fixedOverlay .scroll-wrapper .scroll-area#sidebar-wrapper #scrollbar-container #scrollbar {
+    width: 100%;
+    background: #f14602;
+    opacity: 100%;
+    height: 0%;
+    border-radius: 20px;
+    transition: 0.5s;
+  }
+  #fixedOverlay .scroll-wrapper .scroll-area #backtotop-wrapper {
+    width: 3vw;
+    pointer-events: all;
+    cursor: pointer;
+    opacity: 0;
+    transition: 0.5s ease-out;
+    max-width: 20px;
+  }
+  @media screen and (max-width: 767px) {
+    #fixedOverlay .scroll-wrapper .scroll-area #backtotop-wrapper {
+      width: 4vw;
+    }
+  }
+  #fixedOverlay .scroll-wrapper .scroll-area #backtotop-wrapper.scrolled {
+    opacity: 1;
+  }
+  #fixedOverlay .scroll-wrapper .scroll-area #backtotop-wrapper svg {
+    width: 100%;
+  }
+  #fixedOverlay .scroll-wrapper .scroll-area #backtotop-wrapper svg path {
+    transition: 0.5s;
+  }
+  #fixedOverlay .scroll-wrapper[hiddenScroll=true] {
+    opacity: 0;
+  }
+  #fixedOverlay .scroll-wrapper[onBlue=true] .scroll-area#sidebar-wrapper #scrollbar-container {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  #fixedOverlay .scroll-wrapper[onBlue=true] .scroll-area#sidebar-wrapper #scrollbar-container #scrollbar {
+    background: #FAFAFC;
+  }
+  #fixedOverlay .scroll-wrapper[onBlue=true] .scroll-area svg path {
+    stroke: #FAFAFC !important;
+  }
+  #fixedOverlay ACCnav {
+    box-sizing: border-box;
+    z-index: 2;
+    pointer-events: none;
+    display: block;
+    transition: 0.5s;
+    height: 87px;
+  }
+  #fixedOverlay ACCnav #header {
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+  }
+  #fixedOverlay ACCnav #header object {
+    width: 145px;
+    pointer-events: none;
+  }
+  #fixedOverlay ACCnav #header .active .menu-short {
+    transform: translateX(30%) scaleX(0);
+  }
+  #fixedOverlay ACCnav #header .active #top-hamb {
+    transform: scale(0.7) translateY(17px) rotate(45deg);
+  }
+  #fixedOverlayACCnav #header .active #bottom-hamb {
+    transform: scale(0.7) translateY(-11px) rotate(-45deg);
+  }
+  #fixedOverlay ACCnav #header .hamb-wrapper {
+    height: 100px;
+    background-color: #282929;
+    border-radius: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 20px 20px 0;
+    box-shadow: 0px 0px 6px #999;
+  }
+    img{
+    position: fixed;
+    height: 100px;
+    width: 100px;
+    right: 13px;
+    top: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    z-index: 999;
+  }
+  
+  #fixedOverlay ACCnav #header .hamb-wrapper .menu-wrapper {
+    cursor: pointer;
+    z-index: 11;
+    box-sizing: border-box;
+    width: 30px;
+    pointer-events: all;
+  }
+  #fixedOverlay ACCnav #header .hamb-wrapper .menu-wrapper .menu-hamb .img{
+    height: 4px;
+    border-radius: 5px;
+    transition: 0.5s;
+    background-color: #f5f5f8;
+    z-index: 999;
+    border-radius: 50%;
+  }
+  #fixedOverlay ACCnav #header .hamb-wrapper .menu-wrapper .menu-short {
+    width: 70%;
+    margin-bottom: 6px;
+    margin-top: 6px;
+    transition: transform 0.1s;
+    transition: background-color 0.5s;
+  }
+  #fixedOverlay ACCnav #header .hamb-wrapper.white-menu {
+    background-color: #FAFAFC;
+  }
+  #fixedOverlay ACCnav #header .hamb-wrapper.white-menu .menu-hamb {
+    background-color: #62efc0;
+  }
+  #fixedOverlay ACCnav #header .hamb-wrapper.invisible {
+    box-shadow: none;
+    background-color: transparent;
+  }
+  #fixedOverlay ACCnav #header #logo {
+    transition: 0.5s;
+    margin: 20px 0 20px 20px;
+  }
+  #fixedOverlay ACCnav #header #logo a {
+    pointer-events: all;
+    display: block;
+  }
+  #fixedOverlay #bubbles-to-close {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: none;
+  }
+  #fixedOverlay #bubbles-to-close[open=true] {
+    display: initial;
+    pointer-events: all;
+  }
+  
+  #bubbles {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+  }
+  #bubbles .bubble {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #bubbles .bubble > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #bubbles .bubble > div .choices {
+    text-transform: uppercase;
+    padding-left: 20px;
+    padding-right: 20px;
+    pointer-events: all;
+  }
+  #bubbles .bubble > div .choices .menu-list {
+    width: fit-content;
+    list-style: none;
+    font-size: 2em;
+  }
+  #bubbles .bubble > div .choices .menu-list h1 {
+    margin: 0;
+    font-size: 1.2em;
+    font-family: "montserrat-bold";
+  }
+  #bubbles .bubble > div .choices .menu-list .main-choice h1 {
+    box-shadow: inset 0 0 0 -1px #efa162;
+    transition: 0.3s;
+    padding: 0 5px;
+  }
+  #bubbles .bubble > div .choices .menu-list .main-choice h1:hover {
+    box-shadow: inset 0 -0.5em 0 -1px #f12004;
+  }
+  #bubbles .bubble > div .choices .menu-list .active h1 {
+    box-shadow: inset 0 -0.5em 0 -1px #8d360d;
+  }
+  #bubbles .bubble > div .choices ol li {
+    counter-increment: count-me;
+    cursor: pointer;
+    padding: 10px;
+    width: fit-content;
+  }
+  #bubbles .bubble > div .choices ol li::before {
+    content: counter(count-me) ". ";
+    max-width: 0px;
+    max-height: 0px;
+    left: -1.3em;
+    position: relative;
+    display: flex;
+  }
+  #bubbles .bubble > div .choices ul {
+    padding-inline-start: 0;
+  }
+  #bubbles #popup-main {
+    background-color: #121212;
+    height: 40vw;
+    width: 40vw;
+    border-radius: 100%;
+    transition: 1s;
+    z-index: 2;
+    transform: translate(100vw, -100vh);
+    -webkit-box-shadow: 0px 0px 27px 0px rgba(0, 0, 0, 0.57);
+    -moz-box-shadow: 0px 0px 27px 0px rgba(0, 0, 0, 0.57);
+    box-shadow: 0px 0px 27px 0px rgba(0, 0, 0, 0.57);
+  }
+  #bubbles #popup-main h1 {
+    color: #FAFAFC !important;
+  }
+  #bubbles #popup-main .menu-list {
+    font-size: 1.8em;
+  }
+  #bubbles #popup-main .menu-list li::before {
+    -webkit-text-fill-color: #121212;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #FAFAFC;
+    line-height: 0.6em;
+    font-size: 2em;
+  }
+  #bubbles #popup-main .menu-list .active::before {
+    -webkit-text-fill-color: #FAFAFC;
+  }
+  #bubbles #popup-next {
+    background-color: #6281EF;
+    height: 70vw;
+    width: 70vw;
+    border-radius: 100%;
+    transition: 1s;
+    color: #FAFAFC;
+    overflow: hidden;
+    z-index: 3;
+    transform: translate(-100vw, 100vh);
+  }
+  #bubbles #popup-next .choices .menu-list {
+    font-size: 2em;
+    list-style: none;
+    margin: 0 auto;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: center;
+    text-align: -moz-center;
+    text-align: -webkit-center;
+  }
+  
+  #bubbles #popup-next.project .choices .menu-list li:first-child {
+    padding-top: 25px;
+    /* TODO: maybe remove?? Kamile pls comment on this */
+  }
+  
+  #bubbles #popup-next .choices .menu-list li {
+    width: fit-content;
+    padding-bottom: 25px;
+    font-family: "montserrat-bold";
+    line-height: 1;
+  }
+  #bubbles #popup-next .choices .menu-list li a {
+    box-shadow: inset 0 0 0 -1px #ce33b4;
+    transition: 0.3s;
+    padding: 0 5px;
+  }
+  #bubbles #popup-next .choices .menu-list li a:hover {
+    box-shadow: inset 0 -0.5em 0 -1px #282929;
+  }
+  #bubbles #popup-next .choices .menu-list a {
+    color: #FAFAFC;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  #bubbles #popup-next.wl .menu-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-auto-flow: column;
+    text-align: left;
+  }
+  #bubbles #popup-next.wl .menu-list li {
+    width: initial;
+    font-family: "montserrat-bold";
+  }
+  #bubbles #popup-next.wl .menu-list li a {
+    padding: 0 0 5px 0;
+  }
+  #bubbles #popup-next.wl .menu-list .right-align {
+    text-align: right;
+    padding-right: 10px;
+  }
+  #bubbles #popup-next.wl .menu-list .left-align {
+    padding-left: 10px;
+    border-left: solid 2px #FAFAFC;
+  }
+  #bubbles #popup-main.active {
+    transform: translate(37vw, -23vh);
+  }
+  #bubbles #popup-next.active {
+    transform: translate(-10vw, -100vh);
+  }
+  
+  #problem-page {
+    background-color: #FAFAFC;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    #bubbles #popup-main {
+      background-color: #121212;
+      height: 60vh;
+      width: 60vh;
+    }
+    #bubbles #popup-main .menu-list {
+      font-size: 18px;
+    }
+    #bubbles #popup-main .menu-list h1 {
+      font-size: 1.2em;
+    }
+    #bubbles #popup-main .menu-list li::before {
+      line-height: 22px;
+    }
+    #bubbles #popup-next {
+      height: 100vw;
+      width: 100%;
+    }
+    #bubbles #popup-next .menu-list {
+      font-size: 1.5em;
+    }
+    #bubbles #popup-next .menu-list li {
+      padding: 5px;
+    }
+    #bubbles #popup-next .wl li {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    #bubbles #popup-main.active {
+      transform: translate(37vw, -23vh);
+    }
+    #bubbles #popup-next.active {
+      transform: translate(-10vw, -70vh);
+    }
+  
+    #fixedOverlay #sidebar #sidebar-wrapper #indicateScroll h3 {
+      font-size: 0.65em;
+    }
+    #fixedOverlay ACCnav #header h1 {
+      font-size: 18px;
+    }
+    #fixedOverlay ACCnav #header .active #top-hamb {
+      transform: scale(0.7) translateY(17px) rotate(45deg);
+    }
+    #fixedOverlay ACCnav #header .active #bottom-hamb {
+      transform: scale(0.7) translateY(-11px) rotate(-45deg);
+    }
+    #fixedOverlay ACCnav #header .menu-wrapper .menu-hamb {
+      height: 3px;
+    }
+    #fixedOverlay ACCnav #header .menu-wrapper .menu-short {
+      margin-bottom: 5px;
+      margin-top: 5px;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    #bubbles .bubble .choices {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    #bubbles .bubble .choices ol li {
+      padding: 7px;
+    }
+    #bubbles #popup-main {
+      background-color: #121212;
+      height: 100vw;
+      width: 100vw;
+      right: -100vw;
+      top: -100vh;
+    }
+    #bubbles #popup-main .menu-list {
+      font-size: 18px;
+    }
+    #bubbles #popup-main .menu-list h1 {
+      font-size: 1.2em;
+    }
+    #bubbles #popup-next {
+      height: 100vw;
+      width: 100%;
+    }
+    #bubbles #popup-next .choices .menu-list {
+      font-size: 1.2em;
+    }
+    #bubbles #popup-next .choices .menu-list li {
+      margin-bottom: 3px;
+    }
+    #bubbles #popup-next .wl {
+      column-gap: 0;
+    }
+    #bubbles #popup-next .wl li {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    #bubbles #popup-main.active {
+      transform: translate(20vw, -24vh);
+    }
+    #bubbles #popup-next.active {
+      transform: translate(0vw, -70vh);
+    }
+  
+    #fixedOverlay ACCnav {
+      height: fit-content;
+    }
+    #fixedOverlay ACCnav[onText=true] {
+      background-color: #FAFAFC;
+      box-shadow: 0px 1px 7px #555;
+    }
+    #fixedOverlay ACCnav[onText=true] #header .hamb-wrapper {
+      background-color: transparent;
+      box-shadow: none;
+      height: unset;
+      width: unset;
+    }
+    #fixedOverlay ACCnav[onText=true] #header .hamb-wrapper .menu-wrapper .menu-hamb {
+      background-color: #f03b04;
+    }
+    #fixedOverlay ACCnav .header-part {
+      margin: 0 10px;
+    }
+    #fixedOverlay ACCnav #header .active #top-hamb {
+      transform: scale(0.7) translateY(17px) rotate(45deg);
+    }
+    #fixedOverlay ACCnav #header .active #bottom-hamb {
+      transform: scale(0.7) translateY(-11px) rotate(-45deg);
+    }
+    #fixedOverlay ACCnav #header .menu-wrapper .menu-hamb {
+      height: 3px;
+    }
+    #fixedOverlay ACCnav #header .menu-wrapper .menu-hamb.white-menu {
+      background-color: #ee08e2;
+    }
+    #fixedOverlay ACCnav #header .menu-wrapper .menu-short {
+      margin-bottom: 5px;
+      margin-top: 5px;
+    }
+    #fixedOverlay #sidebar {
+      width: 10vw;
+    }
+    #fixedOverlay #sidebar #sidebar-wrapper #indicateScroll h3 {
+      font-size: 0.65em;
+    }
+  }
+  @media only screen and (max-width: 420px) and (max-height: 600px) {
+    #bubbles #popup-main .menu-list libefore {
+      font-size: 1.8em;
+      line-height: 0.5em;
+    }
+    #bubbles #popup-main .menu-list h1 {
+      font-size: 1em;
+    }
+    #bubbles #popup-next .choices .menu-list {
+      font-size: 0.9em;
+    }
