@@ -1,1 +1,62 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Accesibility_Manchester.css">
+</head>
+<body>
+    <div id="fixedOverlay" bg="dark">
+        <div class="scroll-wrapper" hiddenScroll="false" onBlue="false">
+            <div id="sidebar-wrapper" class="scroll-area">
+            <div id="scroll-comtainer">
+                <div id="scrollbar"></div>
+            </div>
+            </div>
+            <div id="bubbles">
+                <div class="bubble" id="bub_first">
+                    <div id="popup-main" class="toggleable active">
+                        <div class="choices">
+                            <ol class="menu-list"></ol>
+                                <li id="hp" class="main-choice toggleable">
+                                    <h1>Accesibility</h1>
+                                </li>
+                                <li class="main-choice toggleable">
+                                    <a href="#">Read aloud</a>
+                                </li>
+                                <li class="main-choice toggleable">
+                                    <a href="#">Text Highlight</a>
+                                </li>
+                                <li class="main-choice toggleable">
+                                    <a href="#">Font size</a>
+                                </li>
+                                <li class="main-choice toggleable">
+                                    <a href="#">Font style</a>
+                                </li>
+                                <li class="main-choice toggleable">
+                                    <a href="#">Dark Mode</a>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <ACCnav id="ACCnavbar" ontext="false">
+            <div id="header">
+                <div id="logo" class="header-part" visible="true">
+                </div>
+                <div class="hamb-wrapper invisible">
+                    <div class="menu-wrapper header-part toggleable active">
+                        <div id="top-hamb" class="menu-long menu-hamb"></div>
+                        <div class="menu-short menu-hamb"></div>
+                        <div id="bottom-hamb" class="menu-long menu-hamb"><img src="file:///Users/sandralizethmartinezdiaz/Desktop/HTML/T--Manchester--gear.svg" alt="Gear"/></div>
+                </div>
+            </div>
+        </ACCnav>
+    </div>
+    <script type= "text/javascript" src="file:///Users/sandralizethmartinezdiaz/HTML/VAccesibility_Manchester.css" onclick="closeMenu"></script>
+</body>
+</html>
