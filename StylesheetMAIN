@@ -1,0 +1,49 @@
+<style>
+   .firsthalfbackground{
+       background-color: #F6F6F6;
+       font-style:"'Poppins' , sans-serif";
+       text-align:center;
+       font-size: larger;
+   }
+   .headerblank{
+       color: #28292a;
+   }
+   .subheadblank{
+       color: #ffde59;
+   }
+   .parablank{
+       color: #28292a;
+       background-color: #f6f6f6;
+   }
+   .secondhalfbackground{
+       background-color: #c7abff;
+       font-style:"'Poppins' , sans-serif";
+       text-align:center;
+       font-size: larger;
+   }
+   .headerpurple{
+       color: #f6f6f6;
+   }
+   .subheadpurple{
+       color:#ffde59;
+   }
+   footer{
+       background-color: #660099;
+   }
+</style>
+<body>
+<div>THIS IS THE NAVIGATION BAR</div>
+<span>
+<div class = "firsthalfbackground">
+<h2 class = "headerblank">HEADER 1</h2>
+<h3 class = "subheadblank">SUBHEADING ONE</h3>
+<p class = "parablank">PARAGRAPH TEXT ONE</p></div>
+<div class = "secondhalfbackground">
+<h2 class = "headerpurple">HEADER 2</h2>
+<h3 class = "subheadpurple">SUBHEADING TWO</h3>
+<p class = "parapurple">PARAGRAPH TEXT TWO</p>
+</div>
+</span>
+<FOOTER>FOOTER FOR ALL PAGES</FOOTER>
+</body>
+</html>
