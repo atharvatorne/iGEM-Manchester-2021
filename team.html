@@ -1,14 +1,409 @@
-<!-- ADD TEAM PAGE CODE HERE -->
-
-<!DOCTYPE html>
+{{Manchester/NavBar}}
+{{Manchester}}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <style>
+    /**********************************/
+/********** General CSS ***********/
+/**********************************/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #454545;
+    font-weight: 300;
+    background: #ffffff;
+}
+
+a {
+    color: #333333;
+    font-weight: 400;
+    outline: none;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+h2, h3 {
+    padding: 0;
+    margin: 0 0 15px 0;
+    color: #333333;
+    font-weight: 700;
+    
+}
+
+img {
+    width: 6 0%;
+    height: auto;
+}
+
+/* Layout & Section Title */
+
+.super-container {s
+    margin: auto;
+}
+
+.container {
+    width: 100%;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    margin: auto;
+}
+.column {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin: auto;
+}
+
+@media (min-width: 576px) {
+    .column {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 768px) {
+    .column {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+}
+
+@media (min-width: 992px) {
+    .column {
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+}
+
+.team-member {
+    margin-bottom: 30px;
+}
+
+.team-member .team-img {
+    position: relative;
+    font-size: 0;
+    text-align: center;
+    border-radius: 100%;
+    margin-bottom: 30px;
+    overflow: hidden;
+   }
+
+.team-member .team-content {
+    text-align: center;
+}
+
+.team-member .team-content h2 {
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.team-member .team-content h3 {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom:30px;
+}
+
+.team-member .sup-img {
+    position: relative;
+    font-size: 0;
+    text-align: center;
+    border-radius: 100%;
+    margin-bottom: 30px;
+    overflow: hidden;
+    display:inline-block;
+}
+
+    </style>
 </head>
 <body>
-    
+
+
+        <img src="https://2021.igem.org/wiki/images/c/c0/T--Manchester--TeamPage.svg" alt="Team Image">
+        <div class="super-container">
+        <h1> Team Members </h1>
+        <!-- Team Members -->
+        <div class="container">
+            <div class="row">
+                <div class="column">
+                    <div class="team-member">
+                        <div class="team-img">
+                            <img src="https://2021.igem.org/wiki/images/4/48/T--Manchester--TORNE_New.svg" alt="Team Image">
+                        </div>
+                        <div class="team-content">
+                            <h2>Atharva Torne</h2>
+                            <h3>MSci Biotechnology</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="team-member">
+                        <div class="team-img">
+                            <img src="https://2021.igem.org/wiki/images/b/b0/T--Manchester--CROSSLEY.svg" alt="Team Image">
+                        </div>
+                        <div class="team-content">
+                            <h2>Becky Crossley</h2>
+                            <h3>MSci Genetics</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="team-member">
+                        <div class="team-img">
+                            <img src="https://2021.igem.org/wiki/images/7/7e/T--Manchester--SZAJN.svg" alt="Team Image">
+                        </div>
+                        <div class="team-content">
+                            <h2>Hanna Szajn</h2>
+                            <h3>BSc Molecular Biology</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="team-member">
+                        <div class="team-img">
+                            <img src="https://2021.igem.org/wiki/images/0/01/T--Manchester--ROCHE.svg" alt="Team Image">
+                        </div>
+                        <div class="team-content">
+                            <h2>Luke Roche</h2>
+                            <h3>BSc Biochemistry</h3>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+         <div class="container">
+            <div class="row">
+                <div class="column">
+                    <div class="team-member">
+                        <div class="team-img">
+                            <img src="https://2021.igem.org/wiki/images/6/61/T--Manchester--LEE.svg" alt="Team Image">
+                        </div>
+                        <div class="team-content">
+                            <h2>Matthew Lee</h2>
+                            <h3>MSci Biomedical Sciences</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="team-member">
+                        <div class="team-img">
+                            <img src="https://2021.igem.org/wiki/images/5/5b/T--Manchester--MARTINEZ_DIAZ.svg" alt="Team Image">
+                        </div>
+                        <div class="team-content">
+                            <h2>Sandra Martinez</h2>
+                            <h3>BSc Biotechnology</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="team-member">
+                        <div class="team-img">
+                            <img src="https://2021.igem.org/wiki/images/4/42/T--Manchester--KNUROWSKA.svg" alt="Team Image">
+                        </div>
+                        <div class="team-content">
+                            <h2>Sara Knurowska</h2>
+                            <h3>BSc Biotechnology</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="team-member">
+                        <div class="team-img">
+                            <img src="https://2021.igem.org/wiki/images/4/46/T--Manchester--IBRAHIMOV.svg" alt="Team Image">
+                        </div>
+                        <div class="team-content">
+                            <h2>Selin Ibrahimov</h2>
+                            <h3>BSc Biomedical Sciences</h3>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+         <div class="container">
+            <div class="row">
+                <div class="column">
+                    <div class="team-member">
+                        <div class="team-img">
+                            <img src="https://2021.igem.org/wiki/images/1/1f/T--Manchester--PUGH.svg" alt="Team Image">
+                        </div>
+                        <div class="team-content">
+                            <h2>Thomas Pugh</h2>
+                            <h3>BSc Biotechnology</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="team-member">
+                        <div class="team-img">
+                            <img src="https://2021.igem.org/wiki/images/7/78/T--Manchester--XU.svg" alt="Team Image">
+                        </div>
+                        <div class="team-content">
+                            <h2>Yiming Xu</h2>
+                            <h3>MEng Materials Science & Engineering</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="team-member">
+                        <div class="team-img">
+                            <img src="https://2021.igem.org/wiki/images/4/4d/T--Manchester--ZainAsif.svg" alt="Team Image">
+                        </div>
+                        <div class="team-content">
+                            <h2>Zain Asif</h2>
+                            <h3>Medicine</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="team-member">
+                        <div class="team-img">
+                            <img src="https://2021.igem.org/wiki/images/3/39/T--Manchester--DE_ZOYSA.svg" alt="Team Image">
+                        </div>
+                        <div class="team-content">
+                            <h2>Keana de Zoysa</h2>
+                            <h3>BSc Biochemistry</h3>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+
+        <h1> Principal Investigators </h1>
+
+        <!--SUPERVISORS-->
+        <div class="container">
+            <div class="row">
+                <div class="column">
+                    <div class="team-member">
+                        <div class="team-img">
+                            <img src="https://2021.igem.org/wiki/images/f/f3/T--Manchester--TAKANO.svg" alt="Team Image">
+                        </div>
+                        <div class="team-content">
+                            <h2>Eriko Takano</h2>
+                            <h3>Principal Investigator</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="team-member">
+                        <div class="team-img">
+                            <img src="https://2021.igem.org/wiki/images/a/a3/T--Manchester--RainerBrietling.svg" alt="Team Image">
+                        </div>
+                        <div class="team-content">
+                            <h2>Rainer Breitling</h2>
+                            <h3>Principal Investigator</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+        <h1> Advisors </h1>
+
+        <!--ADVISORS-->
+        <div class="container">
+            <div class="row">
+                <div class="column">
+                    <div class="team-member">
+                        <div class="team-img">
+                            <img src="#" alt="Team Image">
+                        </div>
+                        <div class="team-content">
+                            <h2>Katherine Baker</h2>
+                            <h3>Advisor</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="team-member">
+                        <div class="team-img">
+                            <img src="#" alt="Team Image">
+                        </div>
+                        <div class="team-content">
+                            <h2>Erik Hanko</h2>
+                            <h3>Advisor</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="team-member">
+                        <div class="team-img">
+                            <img src="#" alt="Team Image">
+                        </div>
+                        <div class="team-content">
+                            <h2>Francesco Del Carratore</h2>
+                            <h3>Advisor</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="column">
+                        <div class="team-member">
+                            <div class="team-img">
+                                <img src="#" alt="Team Image">
+                            </div>
+                            <div class="team-content">
+                                <h2>Jakub Chromy</h2>
+                                <h3>Advisor</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="team-member">
+                            <div class="team-img">
+                                <img src="#" alt="Team Image">
+                            </div>
+                            <div class="team-content">
+                                <h2>Rosie Brady</h2>
+                                <h3>Advisor</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+<script>
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {ScrollProg()};
+
+function ScrollProg() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+</script>
+
 </body>
 </html>
