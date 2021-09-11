@@ -1,62 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Accesibility_Manchester.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body {
+  font-family: "Lato", sans-serif;
+}
+/* This is for the open Accessibility bar*/
+.sidebar {
+position: fixed;
+  top: 2%;
+  right: 0;
+  transition: 0.5s;
+  padding-top: 50px;
+  background-color: #121212;
+  height: 40vw;
+  width: 40vw;
+  border-radius: 100%;
+  z-index: 1;
+  -webkit-box-shadow: 0px 0px 27px 0px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px 0px 27px 0px rgba(0, 0, 0, 0.57);
+  box-shadow: 0px 0px 27px 0px rgba(0, 0, 0, 0.57);
+}
+/* This is for contents inside the open bubble*/
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 25px;
+  color: #f1f1f1;
+  display: block;
+  transition: 0.5s;
+  right: 0px;
+}
+
+.sidebar a:hover {
+  color: purple;
+}
+.sidebar .closed{
+  position: fixed;
+  top: 10%;
+  padding-top: 50px;
+  right: 40px;
+  font-size: 36px;
+  margin-left: 50px;
+  cursor: pointer;
+  background-color: #121212;
+  padding: 10px 20px;
+  height: 60px;
+  Width: 50px;
+  border-radius: 50%;
+  border: 100%;
+ 
+}
+.active{
+  position: fixed;
+  top: 10%;
+  padding-top: 50px;
+  right: 40px;
+  font-size: 36px;
+  margin-left: 50px;
+  cursor: pointer;
+  padding: 10px 20px;
+  height: 60px;
+  Width: 50px;
+  border-radius: 50%;
+  border: 100%;
+  background-color: #121212;
+}
+/* transition: controls the speed of closed bubble moving*/
+#main {
+  transition: margin-left .5s; 
+  position: fixed;
+  top: 5px;
+  padding-top: 30px;
+  right: 40px;
+  font-size: 36px;
+  margin-left: 50px;
+  cursor: pointer;
+  background-color: #121212;
+  padding: 10px 20px;
+  height: 60px;
+  Width: 50px;
+  border-radius: 50%;
+  border: 100%;
+}
+
+.active:hover {
+  background-color: #444;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+h1{
+    text-align: center;
+    color: #FAFAFC;
+}
+</style>
 </head>
 <body>
-    <div id="fixedOverlay" bg="dark">
-        <div class="scroll-wrapper" hiddenScroll="false" onBlue="false">
-            <div id="sidebar-wrapper" class="scroll-area">
-            <div id="scroll-comtainer">
-                <div id="scrollbar"></div>
-            </div>
-            </div>
-            <div id="bubbles">
-                <div class="bubble" id="bub_first">
-                    <div id="popup-main" class="toggleable active">
-                        <div class="choices">
-                            <ol class="menu-list"></ol>
-                                <li id="hp" class="main-choice toggleable">
-                                    <h1>Accesibility</h1>
-                                </li>
-                                <li class="main-choice toggleable">
-                                    <a href="#">Read aloud</a>
-                                </li>
-                                <li class="main-choice toggleable">
-                                    <a href="#">Text Highlight</a>
-                                </li>
-                                <li class="main-choice toggleable">
-                                    <a href="#">Font size</a>
-                                </li>
-                                <li class="main-choice toggleable">
-                                    <a href="#">Font style</a>
-                                </li>
-                                <li class="main-choice toggleable">
-                                    <a href="#">Dark Mode</a>
-                                </li>
-                            </ol>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <ACCnav id="ACCnavbar" ontext="false">
-            <div id="header">
-                <div id="logo" class="header-part" visible="true">
-                </div>
-                <div class="hamb-wrapper invisible">
-                    <div class="menu-wrapper header-part toggleable active">
-                        <div id="top-hamb" class="menu-long menu-hamb"></div>
-                        <div class="menu-short menu-hamb"></div>
-                        <div id="bottom-hamb" class="menu-long menu-hamb"><img src="file:///Users/sandralizethmartinezdiaz/Desktop/HTML/T--Manchester--gear.svg" alt="Gear"/></div>
-                </div>
-            </div>
-        </ACCnav>
+    <div id="AccSidebar" class="sidebar">
+                <a href="javascript:void(0)" class="main" onclick="closeAcc()">X</a>
+                     <h1>Accessibility</h1>
+                     <a href="#">Read aloud</a>
+                     <a href="#">Text Highlight</a>
+                     <a href="#">Font size</a>
+                     <a href="#">Font style</a>
+                     <a href="#">Dark Mode</a>
     </div>
-    <script type= "text/javascript" src="file:///Users/sandralizethmartinezdiaz/HTML/VAccesibility_Manchester.css" onclick="closeMenu"></script>
+
+    <div id="AccSidebar" class="main">
+        <div class="active" onclick="openAcc()"><img scr="file:///Users/sandralizethmartinezdiaz/Desktop/HTML/T--Manchester--gear.svg" alt="Gear"/></div>  
+    </div>
+
+<script>
+function openAcc() {
+  document.getElementById("AccSidebar").style.width= "500px";
+  document.getElementById("main").style.marginLeft= "500px";
+
+}
+
+function closeAcc() {
+  document.getElementById("AccSidebar").style.width= "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
 </body>
-</html>
+</html> 
