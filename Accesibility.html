@@ -13,16 +13,17 @@ body {
 }
 /* This is for the open Accessibility bar*/
 .sidebar {
-position: fixed;
+height: 500px;
+  width: 0;
+  border-radius: 100%;
+  position: fixed;
+  z-index: 2;
   top: 2%;
   right: 0;
-  transition: 0.5s;
-  padding-top: 50px;
   background-color: #121212;
-  height: 40vw;
-  width: 40vw;
-  border-radius: 100%;
-  z-index: 1;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
   -webkit-box-shadow: 0px 0px 27px 0px rgba(0, 0, 0, 0.57);
   -moz-box-shadow: 0px 0px 27px 0px rgba(0, 0, 0, 0.57);
   box-shadow: 0px 0px 27px 0px rgba(0, 0, 0, 0.57);
@@ -42,53 +43,33 @@ position: fixed;
 .sidebar a:hover {
   color: purple;
 }
+  /* This is for controlling the position of the X for closing the sidebar*/
 .sidebar .closed{
-  position: fixed;
+  position: absolute;
   top: 10%;
   padding-top: 50px;
-  right: 40px;
   font-size: 36px;
-  margin-left: 50px;
   cursor: pointer;
-  background-color: #121212;
-  padding: 10px 20px;
-  height: 60px;
-  Width: 50px;
-  border-radius: 50%;
-  border: 100%;
  
 }
 .active{
   position: fixed;
-  top: 10%;
+  top: 20%;
   padding-top: 50px;
   right: 40px;
-  font-size: 36px;
   margin-left: 50px;
   cursor: pointer;
-  padding: 10px 20px;
-  height: 60px;
-  Width: 50px;
-  border-radius: 50%;
+  border-radius: 100%;
   border: 100%;
+  padding: 10px 20px;
+  height: 70px;
+  Width: 70px;
   background-color: #121212;
 }
 /* transition: controls the speed of closed bubble moving*/
 #main {
   transition: margin-left .5s; 
-  position: fixed;
-  top: 5px;
-  padding-top: 30px;
-  right: 40px;
-  font-size: 36px;
-  margin-left: 50px;
-  cursor: pointer;
-  background-color: #121212;
-  padding: 10px 20px;
-  height: 60px;
-  Width: 50px;
-  border-radius: 50%;
-  border: 100%;
+  padding: 16px;
 }
 
 .active:hover {
@@ -144,9 +125,9 @@ h1{
                      <a href="#">Dark Mode</a>
     </div>
 
-    <div id="AccSidebar" class="main">
-        <div class="active" onclick="openAcc()"><img scr="file:///Users/sandralizethmartinezdiaz/Desktop/HTML/T--Manchester--gear.svg" alt="Gear"/></div>  
-    </div>
+    <div id="main">
+    <button class="active" onclick="openAcc()">open</button>  
+  </div>
 
 <script>
 /*ACCESSIBILITY BAR OPEN AND CLOSE*/
