@@ -142,22 +142,23 @@ function closeAcc() {
   document.getElementById("main").style.marginLeft= "0";
 }
 /*FONT STYLE REMEMBER FONT STYLE*/
+/*Check default as it doesn't work yet*/
 function changeStyleOptiondefault(){
-  var elements =           document.getElementsByClassName("text");
+  var elements =           document.getElementsByTagName('body');
   Array.from(elements).forEach((element) => {
 element.style.fontFamily = "'Lato', sans-serif;";
 });
 }
 
 function changeStyleOptiongeometric(){
-  var elements =           document.getElementsByClassName("text");
+  var elements =           document.getElementsByTagName('body');
   Array.from(elements).forEach((element) => {
 element.style.fontFamily = "'Montserrat', sans-serif";
 });
 }
 
 function changeStyleOptionotherfont(){
-  var elements =           document.getElementsByClassName("text");
+  var elements =           document.getElementsByTagName('body');
   Array.from(elements).forEach((element) => {
 element.style.fontFamily = "'Poppins', sans-serif";
 });
@@ -165,7 +166,7 @@ element.style.fontFamily = "'Poppins', sans-serif";
 }
 
 function changeStyleOptiondyslexicfont(){
-  var elements =           document.getElementsByClassName("text");
+  var elements =           document.getElementsByTagName('body');
   Array.from(elements).forEach((element) => {
 element.style.fontFamily = "'OpenDyslexicAltaRegular'";
 });
