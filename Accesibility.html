@@ -9,7 +9,7 @@
 <style>
 body {
   font-family: "Lato", sans-serif;
-  font-size: 12pt;
+  font-size: 16px;
 }
 /* This is for the open Accessibility bar*/
 .sidebar {
@@ -141,8 +141,8 @@ color: white;
                      <line x1="53" y1="13" x2="45" y2="13" stroke="black" stroke-width="2"/>
                      <line x1="9" y1="13" x2="19" y2="13" stroke="black" stroke-width="2"/>
                      <line x1="26.5" y1="2.10751e-08" x2="26.5" y2="26" stroke="black"/>
-                     <rect id="minus" width="26.5" height="26" fill="white" fill-opacity="0"/>
-                     <rect id="plus" width="26.5" height="26" x="26.5" y="0" fill="white" fill-opacity="0"/>
+                     <rect id="minus" onclick = "increaseFontSizeBy100px" width="26.5" height="26" fill="white" fill-opacity="0"/>
+                     <rect id="plus" onclick = "decreaseFontSizeBy100px"width="26.5" height="26" x="26.5" y="0" fill="white" fill-opacity="0"/>
                  </svg>
                      <a href="#">Choose a Font style
                      <select name = "font-styles" id = "font-styles">
@@ -179,6 +179,19 @@ function openAcc() {
 function closeAcc() {
   document.getElementById("AccSidebar").style.width= "0";
   document.getElementById("main").style.marginLeft= "0";
+}
+/*FONT SIZE plus and a minus*/
+function increaseFontSizeBy10px() {
+    body = document.getElementsByTagName("body")[0];
+    style = window.getComputedStyle(body , null).getPropertyValue('font-size');
+    currentSize = parseFloat(style);
+    body.style.fontSize = (currentSize + 10) + 'px';
+}
+function decreaseFontSizeBy10px() {
+    body = document.getElementsByTagName("body")[0];
+    style = window.getComputedStyle(body , null).getPropertyValue('font-size');
+    currentSize = parseFloat(style);
+    body.style.fontSize = (currentSize - 10) + 'px';
 }
 /*FONT STYLE REMEMBER FONT STYLE*/
 /*Check default as it doesn't work yet*/
