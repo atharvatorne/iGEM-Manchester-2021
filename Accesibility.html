@@ -134,16 +134,10 @@ color: white;
       
                      <a href="#">Text Highlight</a>
       
-                     <a href="#">Font size</a>
-                     <svg width="53" height="26" viewBox="0 0 56 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                     <rect width="53" height="26" rx="13" fill="white"/>
-                     <path d="M40.0732 8.16895L40.0732 13L40.0732 17.8311" stroke="black" stroke-width="2"/>
-                     <line x1="53" y1="13" x2="45" y2="13" stroke="black" stroke-width="2"/>
-                     <line x1="9" y1="13" x2="19" y2="13" stroke="black" stroke-width="2"/>
-                     <line x1="26.5" y1="2.10751e-08" x2="26.5" y2="26" stroke="black"/>
-                     <rect id="minus" onclick = "increaseFontSizeBy10px" width="26.5" height="26" fill="white" fill-opacity="0"/>
-                     <rect id="plus" onclick = "decreaseFontSizeBy10px"width="26.5" height="26" x="26.5" y="0" fill="white" fill-opacity="0"/>
-                 </svg>
+                     <a href="#">Font size
+                      <button id="increase" onclick="increaseFontSizeBy10px()">+</button>
+                      <button id="decrease" onclick="decreaseFontSizeBy10px()">-</button>
+                     </a>
                      <a href="#">Choose a Font style
                      <select name = "font-styles" id = "font-styles">
                         <option value="Lato" id = "default" type="option" onclick = "changeStyleOptiondefault()" alt="Lato font style">Default</option>
@@ -182,16 +176,16 @@ function closeAcc() {
 }
 /*FONT SIZE plus and a minus*/
 function increaseFontSizeBy10px() {
-    body = document.getElementsByTagName("body")[0];
-    style = window.getComputedStyle(body , null).getPropertyValue('font-size');
-    currentSize = parseFloat(style);
-    body.style.fontSize = (currentSize + 10) + 'px';
+            body = document.getElementsByTagName("body")[0];
+            style = window.getComputedStyle(body, null).getPropertyValue('font-size');
+            currentSize = parseFloat(style);
+            body.style.fontSize = (currentSize + 1) + 'px';
 }
 function decreaseFontSizeBy10px() {
-    body = document.getElementsByTagName("body")[0];
-    style = window.getComputedStyle(body , null).getPropertyValue('font-size');
-    currentSize = parseFloat(style);
-    body.style.fontSize = (currentSize - 10) + 'px';
+  body = document.getElementsByTagName("body")[0];
+  style = window.getComputedStyle(body, null).getPropertyValue('font-size');
+  currentSize = parseFloat(style);
+  body.style.fontSize = (currentSize - 1) + 'px';
 }
 /*FONT STYLE REMEMBER FONT STYLE*/
 /*Check default as it doesn't work yet*/
