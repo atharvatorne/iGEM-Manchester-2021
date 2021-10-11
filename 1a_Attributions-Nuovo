@@ -1,0 +1,155 @@
+<html>
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+.header h2 {
+  text-align: center;
+}
+
+.content {
+  padding: 10px 50px;
+  margin: 50px auto 0 auto;
+  width: 80%;
+}
+
+ul {list-style: none}
+
+</style>
+</head>
+<body>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-16 w3-container">
+  <div class="w3-content">
+    <div>
+      <h2 style="color:#000000; line-height: 1.2;">Team</h2>
+      <br>
+      <ul style="color: #000000; text-align: justify; font-size: 18px;">
+         <li><b>Atharva Torne</b> Entrepreneurship; Wiki; Codeathon Logistics </li>
+         <li><b>Becky Crossley</b> Human Practices; Research; Modelling; Administration </li>
+         <li><b>Hanna Szajn</b> Science Communication; Human Practices </li>
+         <li><b>Luke Roche</b> Science Communication; Research; Modelling; Sustainability</li>
+         <li><b>Matthew Lee</b> Research; Science Communication </li>
+         <li><b>Sandra Martinez</b> Research; Wiki; Modelling; Sustainability </li>
+         <li><b>Sara Knurowska</b> Research; Wiki; Sustainability; Modelling; Entrepreneurship </li>
+         <li><b>Selin Ibrahimov</b> Finance </li>
+         <li><b>Thomas Pugh</b> Research; Modelling </li>
+         <li><b>Yiming Xu</b> Modelling; Biomaterial Integration </li>
+         <li><b>Zain Asif</b> Video Editing; Wiki; Human Practices </li>
+         <li><b>Keana de Zoysa</b> Human Practices </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-padding-16 w3-container">
+  <div class="w3-content">
+    <div>
+      <h2 style="color:#381438; line-height: 1.2;">Principal Investigators</h2>
+      <br>
+      <ul style="color: #381438; text-align: justify; font-size: 18px;">
+         <li><b>Professor Eriko Takano</b> - Professor of Synthetic Biology, Director of SynBioChem. Prof Takano guided us throughout the project and provided her invaluable expertise.</li>
+         <li><b>Professor Rainer Breitling</b> - Professor of Systems Biology. Guided the team greatly to help us achieve our goals. Prof Breitling was our first point of contact to discuss our approach to the project, he was there to guide us and help us in every brainstorming session.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Third Grid -->
+<div class="w3-row-padding w3-padding-16 w3-container">
+  <div class="w3-content">
+    <div>
+      <h2 style="color:#381438; line-height: 1.2;">Project Advisors</h2>
+      <br>
+      <ul style="color: #381438; text-align: justify; font-size: 18px;">
+         <li><b>Katherine Baker</b> Lorem ipsum </li>
+         <li><b>Rosie Brady</b> Lorem ipsum </li>
+         <li><b>Francesco del Carratore</b> Lorem ipsum </li>
+         <li><b>Dr Erik Hanko</b> Lorem ipsum </li>
+         <li><b>Jakub Chromy</b> Lorem ipsum </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Fifth Grid -->
+<div class="w3-row-padding w3-padding-16 w3-container">
+  <div class="w3-content">
+    <div>
+      <h2 style="color:#381438; line-height: 1.2;">Hydrogel Design</h2>
+      <br>
+      <ul style="color: #381438; text-align: justify; font-size: 18px;">
+         <li><b>Prof Christopher Blanford</b> - Senior Lecturer in biomaterials at University of Manchester; gave us guidance on the biopolymer hydrogel design, synthesis and characterisations</li>
+         <li><b>Dr Ahu Gumrah Perry</b>  BPICAM Kathleen Lonsdale Research Fellow at University of Manchester; helped us gain broader understanding of chitosan-based hydrogels</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Sixth Grid -->
+<div class="w3-row-padding w3-padding-16 w3-container">
+  <div class="w3-content">
+    <div>
+      <h2 style="color:#381438; line-height: 1.2;">Human Practices</h2>
+      <br>
+      <ul style="color: #381438; text-align: justify; font-size: 18px;">
+         <li><b>Prof Philip Shapira</b> Lorem ipsum </li>
+         <li><b>Dr AndREW Balmer</b> Lorem ipsum</li>
+         <li><b>Barbara Ribeiro</b>  Lorem ipsum</li>
+         <li><b>Robert Meckin</b> Lorem ipsum</li>
+         <li><b>NAME</b> Lorem ipsum</li>
+         <li><b>NAME</b> Lorem ipsum</li>
+         <li><b>NAME</b> Lorem ipsum</li>
+         <li><b>NAME</b> Lorem ipsum</li>
+         <li><b>NAME</b> Lorem ipsum</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Seventh Grid -->
+<div class="w3-row-padding w3-padding-16 w3-container">
+  <div class="w3-content">
+    <div>
+      <h2 style="color:#381438; line-height: 1.2;">Entrepreneurship</h2>
+      <br>
+      <ul style="color: #381438; text-align: justify; font-size: 18px;">
+         <li><b>Ivan Jaubert</b> Lorem ipsum</li>
+         <li><b>Jon Ball</b> Lorem ipsum</li>
+         <li><b>Prof. Aline Miller</b> CEO, Manchester BIOGEL</li>
+         <li><b>Dr. Paul Misselbrook</b> </li>
+         <li><b>Elizabeth Pirrie</b> Lorem ipsum</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="w3-row-padding w3-padding-16 w3-container">
+    <div class="w3-content">
+      <div>
+        <h2 style="color:#381438; line-height: 1.2;">Science Communication & Wiki</h2>
+        <br>
+        <ul style="color: #381438; text-align: justify; font-size: 18px;">
+           <li><b>Prof. John Ward</b> Podcast Ep. 1, Ep. 2</li>
+           <li><b>Prof. Simon Turner</b> Podcast Ep. 6 </li>
+           <li><b>Prof. Louise Horsfall</b> Podcast Ep. 5 </li>
+           <li><b>Prof. Neil Dixon</b> Podcast Ep. 7 </li>
+           <li><b>Team:KCL_UK</b> Podcast Ep. 4</li>
+           <li><b>Team:St_Andrews</b>Podcast Ep. 3</li>
+           <li><b>Jacob Knight</b> Wiki NavBar</li>
+           <li><b>Rosalind Bell</b> Lorem ipsum</li>
+           <li><b>University of Manchester Disabled Society</b> Lorem ipsum</li>
+        </ul>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
