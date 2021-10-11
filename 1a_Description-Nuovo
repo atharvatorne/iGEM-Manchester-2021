@@ -1,0 +1,115 @@
+{{Manchester/NavBar}}
+{{Manchester}}
+{{Manchester/AccBar}}
+{{Manchester/CSS}}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+
+.model-img {
+    width: 80%;
+    height: 80%; 
+}
+
+.model-ul, .model-li {
+    font-size: 16px;
+}
+
+.model-li_2 {
+    font-size:14px;
+}
+
+.model-title_p {
+    font-size: 28px;
+    color: #660099;
+    font-weight: bold;
+}
+
+.model-title_p1 {
+    font-size: 24px;
+    color: #660099;
+    font-weight: bold;
+}
+
+.model-ltp {
+    font-size: 18px;
+}
+
+.abstract {
+    font-weight: normal;
+    font-size: 16px;
+}
+
+    </style>
+
+</head>
+<body class = "light-theme">
+
+<img src="https://2021.igem.org/wiki/images/8/8a/T--Manchester--Wiki_Design.svg" alt="Project Description image: Urigel: A living therapeutic catheter coating to prevent Urinary Tract Infections" style="width:100%;height:auto;">
+
+<div class="w3-row-padding w3-padding-16 w3-container">
+    <div class="w3-content">
+
+<h1 class="model-title_p">Abstract<h1>
+<p style="font-size:16px; font-weight: normal; font-style: italic;">Catheterization is required in many hospital patients, and long-term catheterization leads to catheter-associated urinary tract infections (CAUTIs) in most patients. Talks with doctors identified there was no system in place to effectively prevent CAUTIs. To address this issue, we designed a hydrogel coating containing engineered bacteria which would sense pathogens and secrete biofilm degrading enzymes, secrete inhibitors of virulent enzymes, express a binding domain to attach to the hydrogel and depend on the urinary tract environment for survival (kill switch). We modelled our hydrogel and found our secreted products would efficiently diffuse through the hydrogel. Modelling the antibiofilm mechanism gave us an estimate of how much enzyme we would need to effectively fight infection. Molecular docking studies identified a candidate virulent enzyme inhibitor. Finally, a urea- and a sarcosine-responsive promoter were characterised to validate our kill switch mechanism. Overall, we have successfully designed a potential solution to CAUTIs.</p>
+
+
+<h1 class="model-title_p">Project Inspiration</h1>
+<p  style="font-size:16px;">With the ongoing pandemic, the spread of infectious diseases through various means was highlighted. We decided to focus on diseases spreading through medical surfaces, eventually settling on urinary catheters because of the lack of treatments for Catheter Acquired Urinary Tract Infections (CAUTIs). CAUTIs are a problem barely talked about that have many implications in patient morbidity, hospital expenses, and antibiotic resistance. With the lack of functional therapeutics patients and medical staff are either forced to replace the catheter immediately and prevent infection with the use of antibiotics. However, despite the use of antibiotics, CAUTIs cause a third of hospital acquired infections worldwide(1)</p>
+
+
+<h1 class="model-title_p"> Treatments for CAUTIs</h1>
+<p  style="font-size:16px;">Current treatments for CAUTIs focus on prevention using antibiotic treatment and managing infection by removing and replacing the catheter. However, CAUTIs occur in 100% of patients after only 30 days of catheterization,  making them the world’s most common infection (2). 
+While searching for potential treatments, we came across antimicrobial silver-particle coatings. They reduce infection by 50%, but they do raise concerns and problems surrounding toxicity and shorter lifespans.Hydrophilic coatings made of biopolymers (e.g. cellulose, dextran, chitin) have been proposed to reduce bacterial infections, but these remain costly and inaccessible (3). </p>
+
+<h1 class="model-title_p">UriGel</h1>
+<p  style="font-size:16px;"> Our approach involves reducing survival rates of pathogenic bacteria by preventing colonization of the urinary tract and causing infection. Our proposed concept aims to do this in two ways:
+
+<ol>
+    <li class="model-li_2" style="text-align: left;">By preventing or decreasing biofilm formation making the pathogens more susceptible to environmental factors </li>
+    <li class="model-li_2" style="text-align: left;">Inhibiting pathogenic bacteria’s Urease enzymes which will reduce their fitness in the urinary tract making them more susceptible to cell death.</li> </ol>  </p>
+
+<p  style="font-size:16px;"> Alongside this, because our engineered bacterium would be released into human patients we designed a kill switch that would prevent the bacteria growing anywhere except the urinary tract. We decided on engineering Lactobacillus plantarum as the genus is well known for its robust growth in the human urinary microbiome and the species in particular had plenty of synthetic biology applications and technologies for living therapeutics. </p>
+
+<h1 class="model-title_p">Reducing Biofilm Formation</h1>
+<p  style="font-size:16px;">In order to reduce biofilm formation we planned for our engineered bacteria to secrete Dispersin B, a protein which has exoglucanase activity allowing it to break down biofilms. However, we did not want to express Dispersin B constitutively due to negative effects the protein might have on our own protein by using up resources for protein synthesis and direct action of the protein. Therefore we planned to express Dispersin B via the Lsr promoter, which is indirectly activated by a signalling molecule secreted by the E. coli pathogens found in many UTIs.</p>
+
+<h1 class="model-title_p">Inhibiting Urease Activity</h1>
+<p  style="font-size:16px;">Initially we planned to try and control pH, keeping pH below 7 as values higher than this were associated with infection. Upon further reading we found that the infection caused the pH change and not the other way around. This pH change was caused by pathogens secreting urease enzymes which break down urea into ammonia causing a pH rise. Many inhibitors have been identified for the jackbean and H. pylori urease enzymes. However, our main target is urinary tract pathogens so we decided to perform molecular docking analysis for the urease inhibitors identified as potential targets and check for their ability to bind the urease enzymes from various urinary pathogens.
+</p>
+
+<h1 class="model-title_p">Product Delivery</h1>
+<p  style="font-size:16px;">Hydrogel coatings have been used previously to reduce friction caused when inserting catheters. We wanted to bolster these hydrogel coatings with our engineered bacteria to also provide defense against colonising pathogens. We wanted to produce our hydrogel from sustainable materials that would be available in resource limited countries. Initially we chose chitosan sourced from shrimp shell waste, however after discussions with stakeholders we decided the risk of allergic shock from the chitosan was too high. Instead we opted to make our hydrogel from cellulose derivatives which are readily available from any farm. Our engineered Lactobacillus will express a cellulose binding domain embedded in the cell surface which will keep them bound to the hydrogel.</p>
+
+<h1 class="model-title_p">Kill Switch</h1>
+<p  style="font-size:16px;">To ensure that our engineered bacteria would not escape their intended habitat, the urinary tract, we designed a kill switch that relied on urea and sarcosine, two components found in abundance in the urinary tract.</p>
+
+<h1 class="model-title_p">Human Practices</h1> 
+<p  style="font-size:16px;">Throughout the design phase we remained in contact with stakeholders to help ensure our project was most effective at solving the problems faced by end users.</p>
+<ul class="model-li_2" style="text-align: left;"><li>Interviews with doctors</li>
+<li class="model-li_2" style="text-align: left;">Interviews with sociologists</li>
+</ul>
+
+<h1 class="model-title_p">Long-term aims</h1>
+<p style="font-size:16px;"><b>Affordability</b>: We have opted to use cellulose as the main polymer to create the hydrogel catheter coating with the aim of designing a low-cost catheter coating that can potentially increase access to functional and therapeutic catheter coatings, especially for low resource areas.
+<p style="font-size:16px;"><b>Sustainability</b>: we aim to purify cellulose from biomass waste generated by farmers and hence upcyle materials. </p>
+<p style="font-size:16px;"><b>Novel Solution:</b> We aim to provide a concept for a novel approach at fighting infections to help increase the arsenal available to medical practitioners and help in the push to realise better solutions to diseases.</p>
+
+<h4 class="model-title_p1">References</h4>
+<ul class="model-ul">
+<li class="model-li_2">(1) Tambyah, P.A. (2004). Catheter-associated urinary tract infections: diagnosis and prophylaxis. International journal of antimicrobial agents, 24, pp.44–48.</li>
+<li class="model-li_2">Cdc.gov. 2021. Background | CAUTI Guidelines | Guidelines Library | Infection Control|CDC. [online] Available at: <https://www.cdc.gov/infectioncontrol/guidelines/cauti/background.html> [Accessed 7 October 2021].</li>
+</ul>
+
+</div>
+</div>
+
+</body>
+</html>
+{{Manchester/Footer}}
