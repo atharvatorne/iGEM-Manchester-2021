@@ -1,0 +1,130 @@
+{{Manchester/NavBar}}
+{{Manchester}}
+{{Manchester/CSS}}
+{{Manchester/AccBar}}
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+.model-img {
+    width: 80%;
+    height: 80%; 
+}
+
+.model-ul, .model-li {
+    font-size: 16px;
+}
+
+.model-title_p {
+    font-size: 28px;
+    color: #660099;
+}
+
+.model-ltp {
+    font-size: 18px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="w3-row-padding w3-padding-16 w3-container">
+    <div class="w3-content">
+
+<p><b>Modelling – Home Page</b>
+
+    <span style='position:relative;top:2.0pt'>
+    
+    <img width=12 height=19 src="Modelling%20Home%20page_files/image001.png">
+
+</span></p>
+
+<h1 class="model-title_p"><b>What have we modelled?</b></h1>
+
+    <p style="font-size:16px;">1. We have modelled the diffusion behaviours of solute molecules within the hydrogel, as a functional property of the material.</p>
+    <p style="font-size:16px;">2. We have modelled the production of DispersinB protein as the biofilm degrading enzyme</p>
+    <p style="font-size:16px;">3. We have carried our ensemble modelling that quantitatively examined the distribution of parameters and their corresponding results.</p>
+
+<h1 class="model-title_p"><b>Why did we model these?</b></h1>
+
+<ul class="model-ul">
+ <li class="model-li"> We aim to use mathematical model to gain a more insightful understanding of our design and help improve our design functionalities.</li>
+ <li class="model-li"> Hydrogel relative diffusivity and Dispersin B concentration are needed to predict functioning efficacy of our design</li>
+</ul>
+
+<h1 class="model-title_p"><b>How did we model these?</b></h1>
+
+<ul class="model-ul">
+ <li class="model-li">[hydrogel:]</li>
+ <ul>
+  <li>Adopted MSDM model (Axpe, et al., 2019)</li>
+  <li>Predicted mesh size using models proposed by Peppas, et al., 2000 and Peppas, et al., 1988</li>
+  <li>Used additional models to calculate unreported parameters (see <a href="https://2021.igem.org/Team:Manchester/Model/Hydrogel"> this</a> page for details) </li>
+  <li> Employed ensemble modelling approach to account for the uncertainties in the parameters.</li>
+ </ul>
+</ul>
+
+<img class="model-img" id="Graphic 1" src="https://2021.igem.org/wiki/images/f/fa/T--Manchester--D_rHistogram_Dispersin_B_10CA.svg">
+
+<ul class="model-ul">
+ <li class="model-li">[DspB]</li>
+ <ul class="model-ul">
+  <li>Modified a system of ordinary differential equations proposed by Hooshangi and Benteley (2011) and added terms that account for bacterial production of Autoinducer-2 and the effect of biofilm
+      degradation on bacteria population. Carried out ensemble modelling to account for uncertainties in parameters. Details: see </li>
+ </ul>
+</ul>
+
+<img class="model-img" width=80% height=80% id="Graphic 6" src="https://2021.igem.org/wiki/images/1/12/T--Manchester--randomly_sampled.svg">
+
+<ul class="model-ul">
+ <li class="model-li">[Kill switch]</li>
+ <ul class="model-ul">
+  <li class="model-li">Constructed ordinary differential equations that describe
+      the toxin-anti toxin kill switch system. </li>
+  <li class="model-li">Equations:</li>
+ </ul>
+</ul>
+
+<h1 class ="model-title_p"><b>What have learnt from the models?</b></h1>
+
+<p style="font-size:16px;">1. Hydrogel model: we learnt that the mesh size and the mass-swelling ratio dominate the
+relative diffusivity of the hydrogel, and they need to be controlled to ensure the
+synthesised hydrogel can function well with our designed bacteria.</p>
+
+<p style="font-size:16px;">2. Dispersin B model: By analysing the influence of each of the unknown parameter on the
+predicted growth of bacteria and the secretion of Dispersin B concentration in
+response to pathogenic bacteria growth. We have identified the values at which
+our system becomes incapable of controlling the bacteria growth.</p>
+
+
+<h1 class="model-title_p"><b>How can future teams improve our progress?</b></h1>
+<br>
+
+<h3><b>Hydrogel</b></h3>
+
+<p style="font-size:16px;">Due to lack of lab access, we were not physically able to construct the hydrogel
+material. Future team can validate our model results by physically synthesising
+the hydrogel. Furthermore, the hydrogel-catheter interface interaction needs be
+modelled to investigate the adhesion of the hydrogel onto the catheter surface.</p>
+
+<h3><b>DspB</b></h3>
+
+<p style="font-size:16px;"> a. There are 4 parameters that need to be experimentally investigate to further validate our model. The k_dying (rate at which bacteria population declines due to immune system), k_biofilm(rate at which bacteria secretes biofilm), k_break (rate at which DspB breaks down biofilm) and k_AI2(secretion rate of AI-2 by pathogenic bacteria)</p>
+
+<h3><b>Kill switch</b></h3>
+
+<p style="font-size:16px;"> Due to lack of lab access, we were unfortunately unable to measure the rate constants such as the MazF expression levels. This can be further investigated by future teams.</p>
+</div>
+</div>
+
+</body>
+
+</html>
+{{Manchester/Footer}}
